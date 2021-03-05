@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="BagelBuilderGUI">
+  <grid id="27dc6" binding="panel" layout-manager="GridLayoutManager" row-count="7" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="565" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <component id="a96d5" class="javax.swing.JLabel" binding="titlelb">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Brush Script MT" style="1"/>
+          <text value="Choose your bagel:"/>
+        </properties>
+      </component>
+      <vspacer id="8705a">
+        <constraints>
+          <grid row="1" column="2" row-span="6" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <component id="e6ecb" class="javax.swing.JRadioButton" binding="radioPlainB">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <selected value="true"/>
+          <text value="Plain Bagel"/>
+        </properties>
+      </component>
+      <component id="2b2ba" class="javax.swing.JRadioButton" binding="radioWWB">
+        <constraints>
+          <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Whole Wheat Bagel"/>
+        </properties>
+      </component>
+      <component id="38822" class="javax.swing.JRadioButton" binding="radioBlueB">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Blueberry Bagel"/>
+        </properties>
+      </component>
+      <component id="2b98d" class="javax.swing.JRadioButton" binding="radioCranB">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Cranberry Bagel"/>
+        </properties>
+      </component>
+      <component id="89ed" class="javax.swing.JRadioButton" binding="radioCRB">
+        <constraints>
+          <grid row="5" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Cinnamon Rasin Bagel"/>
+        </properties>
+      </component>
+      <component id="e2e10" class="javax.swing.JRadioButton" binding="radioEB">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Everything Bagel"/>
+        </properties>
+      </component>
+      <component id="dcadc" class="javax.swing.JButton" binding="calcButton1">
+        <constraints>
+          <grid row="5" column="3" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Calculate Order"/>
+        </properties>
+      </component>
+      <component id="b9883" class="javax.swing.JLabel" binding="toppingsLB">
+        <constraints>
+          <grid row="0" column="3" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Brush Script MT" style="1"/>
+          <text value="Choose your Toppings"/>
+        </properties>
+      </component>
+      <component id="ce760" class="javax.swing.JCheckBox" binding="checkBoxButter">
+        <constraints>
+          <grid row="1" column="3" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Butter"/>
+        </properties>
+      </component>
+      <component id="20e7a" class="javax.swing.JCheckBox" binding="checkBoxCC">
+        <constraints>
+          <grid row="2" column="3" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Cream Cheese"/>
+        </properties>
+      </component>
+      <component id="295fa" class="javax.swing.JCheckBox" binding="checkBoxPB">
+        <constraints>
+          <grid row="3" column="3" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Peanut Butter"/>
+        </properties>
+      </component>
+      <component id="de6e6" class="javax.swing.JCheckBox" binding="checkBoxJam">
+        <constraints>
+          <grid row="4" column="3" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Mixed Berry Jam"/>
+        </properties>
+      </component>
+      <component id="f9bc6" class="javax.swing.JLabel" binding="totalLB">
+        <constraints>
+          <grid row="6" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="f5d77" class="javax.swing.JLabel" binding="toppingLB">
+        <constraints>
+          <grid row="6" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="8eb4e" class="javax.swing.JLabel" binding="bagelLB">
+        <constraints>
+          <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value=""/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+  <buttonGroups>
+    <group name="bagelrb">
+      <member id="e6ecb"/>
+      <member id="2b2ba"/>
+      <member id="38822"/>
+      <member id="2b98d"/>
+      <member id="89ed"/>
+      <member id="e2e10"/>
+    </group>
+  </buttonGroups>
+</form>
