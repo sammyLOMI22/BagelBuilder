@@ -1,6 +1,8 @@
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
 
 public class BagelBuilderGUI extends JFrame {
     private JLabel titlelb;
@@ -31,70 +33,64 @@ public class BagelBuilderGUI extends JFrame {
         calcButton1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                double bagelAmt=0;
-                double topAMT=0.0;
-                double orderT =0;
-                bagelAmt=getBagelTotal();
-                topAMT=getToppings();
-                orderT= bagelAmt+topAMT;
-                JOptionPane.showMessageDialog(null,"Bagel total: "+String.valueOf(bagelAmt)+" Toppings Total: "+ String.valueOf(topAMT)+" Grand Total: " + String.valueOf(orderT));
+                double bagelAmt = 0;
+                double topAMT = 0.0;
+                double orderT = 0;
+
+                bagelAmt = getBagelTotal();
+                topAMT = getToppings();
+                orderT = bagelAmt + topAMT;
+
+                NumberFormat formatter = NumberFormat.getCurrencyInstance();
+
+                JOptionPane.showMessageDialog(null, "Bagel total: " + String.valueOf(formatter.format(bagelAmt)) + " Toppings Total: " + String.valueOf(formatter.format(topAMT)) + " Grand Total: " + String.valueOf(formatter.format(orderT)));
                 //bagelLB.setText("Bagel total: "+String.valueOf(bagelAmt));
                 //toppingsLB.setText("Toppings Total: "+ String.valueOf(topAMT));
                 //totalLB.setText(" Grand Total: " + String.valueOf(orderT));
             }
         });
     }
-    public static void main(String[] args)
-    {
-      JFrame frame = new BagelBuilderGUI();
-      frame.setVisible(true);
+
+    public static void main(String[] args) {
+        JFrame frame = new BagelBuilderGUI();
+        frame.setVisible(true);
     }
-     public Double getBagelTotal(){
-        double bagelAMT=0;
-         if(radioPlainB.isSelected())
-         {
-             bagelAMT=1.50;
-         }
-         else if(radioBlueB.isSelected())
-         {
-             bagelAMT=2.50;
-         }
-         else if(radioCranB.isSelected())
-         {
-             bagelAMT=2.55;
-         }
-         else if(radioCRB.isSelected())
-         {
-             bagelAMT=2.75;
-         }
-         else if(radioWWB.isSelected())
-         {
-             bagelAMT=2.00;
-         }
-         else if(radioEB.isSelected())
-         {
-             bagelAMT=2.95;
-         }
+
+    public Double getBagelTotal() {
+        double bagelAMT = 0;
+        if (radioPlainB.isSelected()) {
+            bagelAMT = 1.50;
+        } else if (radioBlueB.isSelected()) {
+            bagelAMT = 2.50;
+        } else if (radioCranB.isSelected()) {
+            bagelAMT = 2.55;
+        } else if (radioCRB.isSelected()) {
+            bagelAMT = 2.75;
+        } else if (radioWWB.isSelected()) {
+            bagelAMT = 2.00;
+        } else if (radioEB.isSelected()) {
+            bagelAMT = 2.95;
+        }
         return bagelAMT;
-     }
-     public double getToppings(){
-        double topT =0;
-          if(checkBoxButter.isSelected())
-          {
-              topT=topT+0.10;
-          }
-          if(checkBoxCC.isSelected())
-         {
-             topT=topT+0.95;
-         }
-          if(checkBoxPB.isSelected())
-          {
-              topT=topT+0.95;
-          }
-          if(checkBoxJam.isSelected())
-          {
-              topT=topT+0.95;
-          }
-         return topT;
-     }
+    }
+
+    public double getToppings() {
+        double topT = 0;
+        if (checkBoxButter.isSelected()) {
+            topT = topT + 0.10;
+        }
+        if (checkBoxCC.isSelected()) {
+            topT = topT + 0.95;
+        }
+        if (checkBoxPB.isSelected()) {
+            topT = topT + 0.95;
+        }
+        if (checkBoxJam.isSelected()) {
+            topT = topT + 0.95;
+        }
+        return topT;
+    }
+
+
+
 }
